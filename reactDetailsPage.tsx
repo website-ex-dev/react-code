@@ -65,11 +65,6 @@ export const DetailsPage: React.FC<IProps> = ({type, onRetry, isAnswer}) => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        if (details.id) {
-        }
-    }, [details]);
-
-    useEffect(() => {
         isAnswer && setLastUnansweredOverlayViews((number) => number + 1);
     }, [isAnswer]);
 
